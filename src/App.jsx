@@ -13,7 +13,7 @@ import { loadUser } from "./Redux/UserSlice";
 // import MyEditor from "./Components/MyEditor";
 // import CreateBlog from "./Components/CreateBlog";
 import MyProfile from "./Components/MyProfile";
-import Popup from "./Components/Popup/Popup";
+// import Popup from "./Components/Popup/Popup";
 
 function App() {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ function App() {
   return (
     <BrowserRouter className="App">
       {/* <Popup/> */}
-      <Popup />
+      {/* <Popup /> */}
       <Header />
       {/* <MyEditor/> */}
       {/* <CreateBlog/> */}

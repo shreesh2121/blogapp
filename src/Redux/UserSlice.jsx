@@ -28,9 +28,7 @@ export const loadUser = () => async (dispatch) => {
     const token = localStorage.getItem("token");
     const GetIn = {
       headers: {
-        // "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,
-        // Authorization: `Token ${token}`,
       },
     };
     console.log(GetIn);

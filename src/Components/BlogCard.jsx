@@ -1,25 +1,24 @@
-import * as React from 'react';
+import * as React from "react";
+import Button from "@mui/material/Button";
 
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
-import Avatar from '@mui/material/Avatar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
+import CardActions from "@mui/material/CardActions";
+import Avatar from "@mui/material/Avatar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import { red } from "@mui/material/colors";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ShareIcon from "@mui/icons-material/Share";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 // import { useDispatch } from 'react-redux';
 // import { fetchAllBlogs } from '../Redux/BlogSlice';
 
-export default function BlogCard({blog}) {
-
+export default function BlogCard({ blog }) {
   return (
-
- <Card key={blog.id} sx={{ maxWidth: 645 }}>
+    <Card key={blog.id} sx={{ maxWidth: 645 }}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -42,7 +41,7 @@ export default function BlogCard({blog}) {
       />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-         {blog.Description}
+          {blog.Description}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -52,12 +51,11 @@ export default function BlogCard({blog}) {
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
-       
+         <Button size="small">View</Button>
+         <Button size="small">Edit</Button>
+         <Button size="small">Delete</Button>
+        
       </CardActions>
-
     </Card>
-
   );
 }
-
-
